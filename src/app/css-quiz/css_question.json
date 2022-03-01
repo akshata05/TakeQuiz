@@ -1,0 +1,22 @@
+[
+    {
+        "id": "one",
+        "question": "Which property is used to change the background color?",
+        "options":{
+            "one": "bgcolor",
+            "two": "background-color",
+            "three": "color"
+        }
+   
+    },
+    {
+        "id": "two",
+        "question": "Which HTML tag is used to define an internal style sheet?",
+        "options":{
+            "one": "<body>",
+            "two": "<script>",
+            "three": "<style>"
+        }
+    }
+   
+]

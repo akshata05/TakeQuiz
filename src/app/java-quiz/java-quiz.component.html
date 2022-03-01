@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="container">
+  
+    <span style="color:red;" class="text-center fs-3  "  [style.display]='timerOn'>{{timeLeft}}:{{timeLeftSeconds}}</span>
+    <form #myForm name="demo" >
+
+        <p class="questionset" *ngFor="let product of questions; let i=index">
+            
+            
+            <span class="mol">Q. {{product.question}}</span> 
+            
+            <span class="displayOptions" *ngFor="let answer of product.options | keyvalue">
+                
+                    <input type="radio" [name]="product.id" [id]="answer.value" [value]="answer.value" [disabled]='isDisabled'>
+                    <label [for]="answer.value">{{answer.value}}</label>
+                   
+                
+            </span>
+            <span [style.display]='display'  [ngStyle]="{'background-color': actual[i]===userSelected[i]? 'green' : 'red'}" style="color:white;">Your Answer: {{userSelected[i]}} Correct answer: {{actual[i]}}</span>
+         </p>
+         <button  type='button' class="btn btn-primary btn-lg" (click)="evaluateAnswer()" [disabled]='isDisabled'>Submit and Review</button>
+         <button [style.visibility]='button' type="button" class="btn btn-primary btn-success btn-lg" (click)="getResult()">Result</button>
+         <a routerLink="/"><button [style.visibility]='button' type="button" class="btn btn-primary btn-lg" >Back to Quizzes</button>
+         </a>
+     
+         
+    </form>
+ 
+   
+</div>
+
+

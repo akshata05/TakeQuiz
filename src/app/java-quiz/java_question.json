@@ -1,0 +1,23 @@
+[
+    {
+        "id": "one",
+        "question": "Java is a ____ language",
+        "options":{
+            "one": "Object-Oriented",
+            "two": "Structured",
+            "three": "Abstract"
+        }
+   
+    },
+    {
+        "id": "two",
+        "question": "Which of the following is an incorrect syntax of variale declaration",
+        "options":{
+            "one": "String #asf=\"Java\"",
+            "two": "int form_12=12;",
+            "three": "int abc;",
+            "four": "float num;"
+        }
+    }
+   
+]

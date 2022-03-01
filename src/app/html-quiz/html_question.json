@@ -1,0 +1,21 @@
+[
+    {
+        "id": "one",
+        "question": "HTML stands for",
+        "options":{
+            "one": "Hyper text markup language",
+            "two": "Hyper text multiple language"
+        }
+   
+    },
+    {
+        "id": "two",
+        "question": "div is ___ element",
+        "options":{
+            "one": "Block",
+            "two": "Inline",
+            "three": "Block-Inline"
+        }
+    }
+   
+]
